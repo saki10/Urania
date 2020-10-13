@@ -13,7 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
+  username: <%= ENV['URANIA_DATABASE_USERNAME'] %>
   password: <%= ENV['URANIA_DATABASE_PASSWORD'] %>
   socket: /tmp/mysql.sock
 
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: Urania_production
-  username: <%= ENV['URANIA_DATABASE_PASSWORD'] %>
+  username: <%= ENV['URANIA_DATABASE_USERNAME'] %>
   password: <%= ENV['URANIA_DATABASE_PASSWORD'] %>
