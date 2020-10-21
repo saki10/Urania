@@ -1,3 +1,17 @@
-#aqua {
-  background-color: aqua;
+.pink{
+  display: flex;
+}
+.green{
+  display: flex;
+}
+
+
+.yello {
+  display: flex;
+  align-items: center;
+}
+
+
+.aqua {
+  display: flex;
 }

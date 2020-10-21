@@ -13,17 +13,24 @@
     <header>
       <nav>
           <% if user_signed_in? %>
-          <div class youkoso >
           </div>
           <% end %>
       </nav>
     </header>
     <!-- ここに追加 -->
-    <div id="aqua">カラー表示</div>
-    <div class="bule">トップページです。<div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+  <div class="pink">
+    <div class="black">
+      <div class="green">
+        <div class="yello">
+          <div class="aqua">ようこそ</div>
+          <div class="bule">トップページです。<div>
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+  
+        </div>
+      </div>
+    </div>
+  </div>
     <%= yield %>
   </body>
 </html>
