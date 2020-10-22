@@ -1,18 +1,32 @@
-.pink{
-  display: flex;
-}
-
-.green{
-  display: flex;
+header {
+  height: 50px;
+  background-color: #eea8df;
+  align-items: center;
+  padding: 50px 40px 60px;
+  
 }
 
 
 .yello {
   display: flex;
   align-items: center;
-}
+  margin-left: 50px;
+  margin-right: 50px;
 
+}
 
 .aqua {
   display: flex;
+  margin-left: 690px;
+
 }
+
+.bule {
+  display: flex;
+  margin-left: 650px;
+  margin-bottom: 60px;
+  align-items: center;
+  
+}
+
+

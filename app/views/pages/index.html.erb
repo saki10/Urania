@@ -4,33 +4,31 @@
     <title>Urania</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
     <header>
+      </div>
       <nav>
           <% if user_signed_in? %>
           </div>
           <% end %>
       </nav>
     </header>
-    <!-- ここに追加 -->
-  <div class="pink">
-    <div class="black">
-      <div class="green">
-        <div class="yello">
+  <p class="pink"></p>
+      <p class="green"></p>
+        <p class="yello"></p>
+          <div class="blown"></div>
           <div class="aqua">ようこそ</div>
+            <div class="white"></div>
           <div class="bule">トップページです。<div>
           <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p>
-  
-        </div>
-      </div>
-    </div>
-  </div>
     <%= yield %>
+  <footer>
+  </footer>
   </body>
 </html>
