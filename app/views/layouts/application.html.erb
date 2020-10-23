@@ -9,7 +9,6 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
     <header>
       <nav>
           <% if user_signed_in? %>
@@ -23,11 +22,15 @@
       </nav>
     </header>
     <!-- ここに追加 -->
+    <body>
+    <div class="wrapper">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <footer>
-    </footer>
-
+        <footer>
+        <p>(c)copy right</p>
+      </footer>
+    </div>
+  </body>
     <%= yield %>
   </body>
 </html>

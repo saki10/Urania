@@ -1,3 +1,8 @@
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+}
+
 header {
   display: block;
   height: 50px;
@@ -50,16 +55,14 @@ header {
   text-decoration: none;
 }
 
-.red {
-  background-color: greenyellow;
-}
 footer{ 
-  height: 50px;
-  background-color: gray;
-  padding: 50px 40px 60px;
-  margin-bottom:60px;
-  text-align:;
-
+  width: 100%;
+  background-color: #89c7de;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0; 
 }
 
 
