@@ -1,2 +1,37 @@
-<p>MyPage <%= @user.id %></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Urania</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+    <header>
+      <nav>
+      <% if current_user %>
+            <p>MyPage <%= current_user.id %></p>
+            <strong><%= link_to current_user, pages_show_path(current_user.id)=%></strong> 
+            <%= link_to 'プロフィール変更', edit_user_registration_path %>
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to 'サインアップ',new_user_registration_path,class: "signup" %>
+            <%= link_to 'ログイン', new_user_session_path,class: "roguin"%>
+          <% end %>
+      </nav>
+    </header>
+    <body>
+    <div class="wrapper">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+        <footer>
+        <p>(c)copy right</p>
+      </footer>
+    </div>
+  </body>
+    <%= yield %>
+  </body>
+</html>
 

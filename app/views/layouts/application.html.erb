@@ -11,8 +11,8 @@
 
     <header>
       <nav>
-      <% if user_signed_in? %>
-            <strong><%= link_to current_user.username, pages_show_path=%></strong> 
+      <% if current_user %>
+            <strong><%= link_to current_user, pages_show_path(current_user.id)=%></strong> 
             <%= link_to 'プロフィール変更', edit_user_registration_path %>
             <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
           <% else %>
@@ -26,6 +26,7 @@
     <div class="wrapper">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    
         <footer>
         <p>(c)copy right</p>
       </footer>
