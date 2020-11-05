@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   @users = User.find(current_user.id)
   end
 
-  def new
-  @users = User.new
+  def edit
+  @users = User.find(users.edit)
   end
+
 end
