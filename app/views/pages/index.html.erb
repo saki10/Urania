@@ -8,14 +8,19 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
   <body>
-  <p class="pink"></p>
-      <p class="green"></p>
-        <p class="yello"></p>
-          <div class="blown"></div>
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
+    <header>
+      <% if current_user %>
+        <strong><%= link_to current_user, pages_show_path %></strong> 
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to 'サインアップ',new_user_registration_path,class: "signup" %>
+        <%= link_to 'ログイン', new_user_session_path,class: "roguin"%>
+      <% end %>
+    </header>
     <%= yield %>
+      <footer>
+        <p>(c)copy right</p>
+      </footer>  
   </body>
 </html>

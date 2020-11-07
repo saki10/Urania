@@ -12,28 +12,23 @@
     <header>
       <nav>
       <% if current_user %>
-            <p>MyPage <%= current_user.id %></p>
+            <p>MyPage <%= current_user.username %></p>
             <strong><%= link_to current_user, pages_show_path(current_user.id)=%></strong> 
             <%= link_to 'プロフィール変更', edit_user_registration_path %>
             <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-            
           <% else %>
-
             <%= link_to 'サインアップ',new_user_registration_path,class: "signup" %>
             <%= link_to 'ログイン', new_user_session_path,class: "roguin"%>
           <% end %>
       </nav>
     </header>
     <body>
-    <div class="wrapper">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-        <footer>
-        <p>(c)copy right</p>
-      </footer>
     </div>
   </body>
     <%= yield %>
+      <footer>
+        <p>(c)copy right</p>
+      </footer>
   </body>
 </html>
 

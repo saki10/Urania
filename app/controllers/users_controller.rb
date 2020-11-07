@@ -4,7 +4,6 @@ class UsersController < ApplicationController
   end
 
   def edit
-  @users = User.find(users.edit)
   end
 
 end
