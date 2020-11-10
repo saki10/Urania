@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Urania</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-  </head>
-
-
-      <nav>
-      <% if  %>
-      <div class kanin></div>
+<div class kanin></div>
 <form class="form" action="/personals" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="d1Ckp7ViAt9ChcfSHtyXzyREaUJSPAjgqbdoWdQSxhfKfkqtS4s65QWgzGcvkEx4Po9PUPpDmVcrUbBXojF2KA=="><div class="form__content">
   <span class="form__field__label">生年月日</span>
   <span class="form__field__essential">必須</span>
@@ -139,7 +127,6 @@
   <option value="1902">1902</option>
   <option value="1901">1901</option>
   <option value="1900">1900</option>
-
   </select>
   年<select id="birthday_birthday_2i" name="birthday[birthday(2i)]" class="month">
   <option value="">--</option>
@@ -190,7 +177,7 @@
   <option value="30">30</option>
   <option value="31">31</option>
   </select>
-  <p class="dayTitle">日</p>
+  
   <i class="fas fa-angle-down form__field--inputSelectYear"></i>
   <i class="fas fa-angle-down form__field--inputSelectManth"></i>
   <i class="fas fa-angle-down form__field--inputSelectDay"></i>
@@ -203,12 +190,12 @@
   <div class="form__field flexbox marginT25">
   <div class="form__fieldHalf">
   <div class="form__fieldHalf--input marginR5">
-  <input class="form__fieldHalf--inputField" placeholder="例)ゆめかなえ" type="text" name="personal[firstname]" id="personal_firstname">
+  <input class="form__fieldHalf--inputField" placeholder="例)まこ" type="text" name="personal[firstname]" id="personal_firstname">
   </div>
   </div>
   <div class="form__fieldHalf">
   <div class="form__fieldHalf--input">
-  <input class="form__fieldHalf--inputField" placeholder="例)たいこ" type="text" name="personal[lastname]" id="personal_lastname">
+  <input class="form__fieldHalf--inputField" placeholder="例)なり" type="text" name="personal[lastname]" id="personal_lastname">
   </div>
   </div>
   </div>
@@ -219,12 +206,12 @@
   <div class="form__field flexbox marginT25">
   <div class="form__fieldHalf marginR5">
   <div class="form__fieldHalf--input">
-  <input class="form__fieldHalf--inputField" placeholder="例)ユメカナエ" type="text" name="personal[h_firstname]" id="personal_h_firstname">
+  <input class="form__fieldHalf--inputField" placeholder="例)マコ" type="text" name="personal[h_firstname]" id="personal_h_firstname">
   </div>
   </div>
   <div class="form__fieldHalf">
   <div class="form__fieldHalf--input">
-  <input class="form__fieldHalf--inputField" placeholder="例)タイコ" type="text" name="personal[h_lastname]" id="personal_h_lastname">
+  <input class="form__fieldHalf--inputField" placeholder="例)ナリ" type="text" name="personal[h_lastname]" id="personal_h_lastname">
   </div>
   </div>
   </div>
@@ -236,19 +223,3 @@
   </div>
   </div>
   </form>
-        <p>プロフィール編集画面 </p>
-      <% else %>
-      
-        
-      <% end %>
-      </nav>
-    <body>
-    </div>
-  </body>
-    <%= yield %>
-      <footer>
-        <p>(c)copy right</p>
-      </footer>
-  </body>
-</html>
-
