@@ -9,15 +9,11 @@
   </head>
 
   <body>
-    <header>
+ 
       <% if current_user %>
-        <strong><%= link_to current_user, pages_show_path %></strong> 
-        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to 'サインアップ',new_user_registration_path,class: "signup" %>
-        <%= link_to 'ログイン', new_user_session_path,class: "roguin"%>
+      
       <% end %>
-    </header>
+  
     <%= yield %>
       <footer>
         <p>(c)copy right</p>

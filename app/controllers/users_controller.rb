@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def kanin
+  def users_personals
   end
 
 end

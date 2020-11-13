@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Urania</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  </head>
+    <%# ==登録完了画面（誕生日画面）＝＝ %>
+    <strong><%= link_to current_user_from, pages_show_path_personals(users,personals) %></strong>
+      <nav>
+      <% if  %>
+      <p>登録完了</p>
+      <% else %>
+      
+        
+      <% end %>
+      </nav>
+    <body>
+    </div>
+  </body>
+    <%= yield %>
+      <footer>
+        <p>(c)copy right</p>
+      </footer>
+  </body>
+</html>
