@@ -10,7 +10,7 @@
 
       <nav>
       <%if%>
-<form class="form" action="/personals" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="d1Ckp7ViAt9ChcfSHtyXzyREaUJSPAjgqbdoWdQSxhfKfkqtS4s65QWgzGcvkEx4Po9PUPpDmVcrUbBXojF2KA=="><div class="form__content">
+<form class="form" action="/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="d1Ckp7ViAt9ChcfSHtyXzyREaUJSPAjgqbdoWdQSxhfKfkqtS4s65QWgzGcvkEx4Po9PUPpDmVcrUbBXojF2KA=="><div class="form__content">
   <span class="form__field__label">生年月日</span>
   <span class="form__field__essential">必須</span>
   <div class="form__field">
@@ -230,21 +230,19 @@
   </div>
   <div class="form__content last__content">
   <div class="form__field">
-  <input type="submit" name="commit" value="次へ進む" class="form__field--btn" data-disable-with="次へ進む">
+  <input type="submit" name="users_personal" value="次へ進む" class="form__field--btn" data-disable-with="次へ進む">
   </div>
   </div>
   </div>
   </form>
         <p>プロフィール編集画面 </p>
       <% else %>
-      
         
       <% end %>
       </nav>
     <body>
     </div>
   </body>
-    <%= yield %>
       <footer>
         <p>(c)copy right</p>
       </footer>

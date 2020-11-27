@@ -1,9 +1,20 @@
 class UsersController < ApplicationController
   def show
-  @users = User.find(current_user.id)
+  end
+
+  def create
+  end
+
+  def new
   end
 
   def edit
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
   def users_personals
@@ -14,6 +25,5 @@ class UsersController < ApplicationController
   
   def personals
   end
-
 
 end
