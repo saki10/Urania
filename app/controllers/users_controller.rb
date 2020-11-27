@@ -8,5 +8,12 @@ class UsersController < ApplicationController
 
   def users_personals
   end
+  
+  def  users_kanin
+  end
+  
+  def personals
+  end
+
 
 end
