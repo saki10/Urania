@@ -8,8 +8,25 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+    <header>
+      <nav>
+      <% if current_user %>
+            <strong><%= link_to current_user, pages_show_path %></strong> 
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to 'サインアップ',new_user_registration_path,class: "signup" %>
+            <%= link_to 'ログイン', new_user_session_path,class: "roguin"%>
+          <% end %>
+      </nav>
+    </header>
+    <!-- ログイン画面http://localhost:3000/users/sign_up-->
+    <body>
+  
+    </div>
+  </body>
     <%= yield %>
+          <footer>
+        <p>(c)copy right</p>
+      </footer>
   </body>
 </html>
