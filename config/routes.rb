@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :names
+  devise_for :installs
   get 'users/show'
   devise_for :users
   resources :users, :only => [:show, :new, :create, :new, :edit, :update, :destroy]
