@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   end
 
   def create
-
+    @to_users = to_users.first
   end
 
   def new
