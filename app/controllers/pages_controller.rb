@@ -1,9 +1,6 @@
 class PagesController < ApplicationController
   def index
   end
-
-  def show
-  end
-
+  #ユーザが鑑定結果を見ることができるページ
   
 end
