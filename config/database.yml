@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
-  database: Urania_production
-  username: <%= ENV['URANIA_DATABASE_USERNAME'] %>
-  password: <%= ENV['URANIA_DATABASE_PASSWORD'] %>
+  # database: Urania_production
+  # username: <%= ENV['URANIA_DATABASE_USERNAME'] %>
+  # password: <%= ENV['URANIA_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
