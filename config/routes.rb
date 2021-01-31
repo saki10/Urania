@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to 'urania#index'
+  root to: 'pages#index'
   devise_for :users
   resources :users, :only => [:show, :new, :create, :new, :edit, :update, :destroy]
   get 'pages/index'
