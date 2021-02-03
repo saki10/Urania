@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Urania</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<%# #ユーザーが情報を設定するページ %>
+  <form action="cgi-bin/formmail.cgi" method="post">
+
+誕生日:
+<select name="birth month">
+<option value="1">1月</option>
+<option value="2">2月</option>
+<option value="3">3月</option>
+<option value="4">4月</option>
+<option value="5">5月</option>
+<option value="6">6月</option>
+<option value="7">7月</option>
+<option value="8">8月</option>
+<option value="9">9月</option>
+<option value="10">10月</option>
+<option value="11">11月</option>
+<option value="12">12月</option>
+</select>
+
+血液型:
+<select name="blood">
+<option value="A">A型</option>
+<option value="B">B型</option>
+<option value="O">O型</option>
+<option value="AB">AB型</option>
+</select>
+
+星座：
+<select name="horoscope">
+<option value="Aries">おひつじ座</option>
+<option value="Taurus">おうし座</option>
+<option value="Gemini">ふたご座</option>
+<option value="Cancer">かに座</option>
+<option value="Leo">しし座</option>
+<option value="Virgo">おとめ座</option>
+<option value="Libra">てんびん座</option>
+<option value="Scorpio">さそり座</option>
+<option value="Saggitarius">いて座</option>
+<option value="Capricorn">やぎ座</option>
+<option value="Aquarius">みずがめ座</option>
+<option value="Pisces">うお座</option>
+</select>
+<input class="imput_submit" type="submit" value="占う">
+
+</form>
+</form>
+</div>
+
+  </body>
+</html>
