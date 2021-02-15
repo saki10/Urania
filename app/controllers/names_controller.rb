@@ -11,9 +11,7 @@ class NamesController < ApplicationController
   
   # private
   # def 
-  #   name_params
-  def set_tweet
-    @name = Name.find(params[:id])
-  end
+  #   @name = Name.find(params[:id])
+  # end
 
 end
