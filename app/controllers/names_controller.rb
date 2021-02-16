@@ -9,9 +9,9 @@ class NamesController < ApplicationController
   end
   #鑑定士が鑑定結果を保存することができるページ
   
-  # private
-  # def 
-  #   @name = Name.find(params[:id])
-  # end
+    private
+    def 
+    Name.create(params[:name_params])
+    end
 
 end
