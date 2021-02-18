@@ -9,9 +9,8 @@ class NamesController < ApplicationController
   end
   #鑑定士が鑑定結果を保存することができるページ
   
-    private
-    def 
-    Name.create(params[:name_params])
-    end
-
+  private
+  def name_params
+    params.require(:name).permit(:birthday_month, :blood_type,:money,:health,:love)
+  end
 end
