@@ -1,6 +1,6 @@
 class NamesController < ApplicationController
   def new
-      @name = Name.new
+      @ = Name.new
     end
   #鑑定士が鑑定結果を生成することができるページ
 

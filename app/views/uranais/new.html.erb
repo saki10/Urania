@@ -1,0 +1,12 @@
+      <%= form_with model: @uranai do |form| %>
+
+      <%= form.text_field :birthday_month, class: "hoge", size: 10 %>
+      <%= form.text_field :blood_type, class: "hoge", size: 10 %>
+      <%= form.text_area :money, rows: "20" %>
+
+      <%= form.text_area :health,  rows: "20" %>
+
+      <%= form.text_area :love, rows: "20" %>
+
+      <%= form.submit "送信" %>
+<% end %>
