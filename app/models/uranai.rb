@@ -1,2 +1,0 @@
-class Uranai < ApplicationRecord
-end
