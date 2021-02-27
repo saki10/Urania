@@ -11,6 +11,21 @@
   <body>
 <%# #ユーザーが鑑定画面をみることができるページ %>
 <body>
+<h1>ユーザー検索</h1>
+<%= search_form_for @q, url: diagnosis_uranais_path do |f| %>
+  <%= f.label :name_cont, 'ユーザー名' %>
+  <%= f.search_field :name_cont %>
+  <br>
+  <%= f.submit '検索' %>
+<% end %>
+
+  <%= search_form_for(@q, url: users_path, local: true) do |f| %>
+
+  <%= f.select :name_eq, options_from_collection_for_select(Diagnosis.all, :id, :name , 1) %>
+
+  <%= f.button ' 検索する' %>
+
+<% end %>
 
   <form action="cgi-bin/formmail.cgi" method="post">
 
