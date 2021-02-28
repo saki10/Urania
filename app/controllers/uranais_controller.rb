@@ -4,6 +4,7 @@ class UranaisController < ApplicationController
     @uranai = Uranai.new
   end
 #鑑定士が鑑定結果を生成することができるページ
+#コントローラは複数で、モデルは単数で作る
 
   def create
     Uranai.create(uranai_params)
@@ -21,6 +22,6 @@ class UranaisController < ApplicationController
 
 
   def set_q
-    @q = Uranais.ransack(params[:q])
+    @q = Uranai.ransack(params[:q])
   end
 end

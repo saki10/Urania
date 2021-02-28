@@ -1,8 +1,8 @@
 class CreateUranais < ActiveRecord::Migration[6.0]
   def change
     create_table :uranais do |t|
-      t.string :birthday_month
-      t.string :blood_type
+      t.integer :birthday_month
+      t.integer :blood_type
       t.text :money
       t.text :health
       t.text :love

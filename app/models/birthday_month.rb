@@ -1,0 +1,2 @@
+class BirthdayMonth < ApplicationRecord
+end
